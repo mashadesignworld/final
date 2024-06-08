@@ -14,7 +14,7 @@ const ResetPassword = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/auth/reset-password/' + token, { password })
+        axios.post('https://final-qewg.onrender.com/auth/reset-password/' + token, { password })
             .then(response => {
                 if (response.data.status) {
 

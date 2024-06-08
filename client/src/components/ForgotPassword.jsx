@@ -13,7 +13,7 @@ const forgotPassword = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Submitting email:', email); // Debugging log
-        axios.post('http://localhost:3000/auth/forgot-password', { email })
+        axios.post('https://final-qewg.onrender.com/auth/forgot-password', { email })
             .then(response => {
                 console.log('Response:', response.data); // Debugging log
                 if (response.data.status) {

@@ -10,7 +10,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/auth/login', { email, password })
+        axios.post('https://final-qewg.onrender.com/auth/login', { email, password })
             .then(response => {
                 if (response.data.status) {
                     window.location.href = 'https://fipcapital.net';  // Navigate to the external URL

@@ -61,3 +61,8 @@ body, html, .App, #root, .auth-wrapper {
 .forgot-password a {
   color: #167bff;
 }
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}

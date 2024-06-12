@@ -62,6 +62,12 @@ const ResetPassword = () => {
                     <button type="submit" className="btn btn-primary">
                         Reset
                     </button>
+                    {/* Conditionally render success message */}
+          {response && response.data.status && (
+            <p className="success-message">
+              Check your email for reset password link.
+            </p>
+          )}
                     <p className="forgot-password text-right">
                         Have an account? <Link to="/login">Login</Link>
                     </p>
